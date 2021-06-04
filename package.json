@@ -1,0 +1,35 @@
+{
+  "name": "@shipsgold/open-rpc-near-client-generator",
+  "private": false,
+  "version": "0.0.0-development",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shipsgold/open-rpc-near-client-generator"
+  },
+  "files": [
+    "templates/"
+  ],
+  "main": "./build/src/index.js",
+  "scripts": {
+    "test": "npm run build && npx --no-install jest --coverage",
+    "build": "npx --no-install tsc && cp -r templates build/src",
+    "gen": "npx --no-install open-rpc-generator generate -c ./test-gen.json"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "lodash": "^4.17.21",
+    "near-api-js": "^0.41.0"
+  },
+  "devDependencies": {
+    "@open-rpc/generator": "^1.19.0",
+    "@types/bn.js": "^4.11.6",
+    "@types/fs-extra": "^9.0.11",
+    "@types/jest": "^26.0.23",
+    "@types/lodash": "^4.14.170",
+    "bn.js": "^5.2.0",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.2",
+    "typescript": "^4.3.2"
+  }
+}

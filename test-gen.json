@@ -1,0 +1,13 @@
+{
+  "openrpcDocument": "./test-openrpc.json",
+  "outDir": "generated-client",
+  "components": [
+      {
+          "type": "custom",
+          "name": "test-contract-client",
+          "language": "typescript",
+          "customComponent": "../../../../build/src/index.js",
+          "customType": "client"
+      } 
+  ]
+}

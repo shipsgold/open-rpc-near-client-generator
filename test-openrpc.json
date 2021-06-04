@@ -1,0 +1,88 @@
+{
+  "openrpc":"1.2.4",
+  "info": {
+    "version": "0.0.1",
+    "description": "Test API",
+    "title": "TestContractApi"
+  },
+  "methods": [
+    {
+      "name": "increment",
+      "params": [],
+      "tags": [{
+        "$ref": "#/components/tags/change"
+      }],
+      "result":{
+        "name": "count",
+        "schema": {
+          "type":"number"
+        } 
+      }
+    },
+    {
+      "name": "get_count",
+      "params": [],
+      "tags": [ {
+          "$ref": "#/components/tags/view"
+        }],
+        "result": {
+          "name": "countResult",
+          "schema": {
+            "type": "number"
+          }
+        }
+    },
+    {
+      "result": {
+        "name": "InitResult",
+        "required": false,
+        "schema": {
+          "type": "null"
+        }
+      },
+      "name": "new",
+      "description": "initialization method",
+      "tags": [{
+        "$ref": "#/components/tags/change"
+      }],
+      "params": [
+        {
+          "name": "owner_id",
+          "required": true,
+          "schema": {
+            "title": "owner_id",
+            "type": "string"
+          }
+        },
+        {
+          "name": "count",
+          "required": true,
+          "schema": {
+            "title": "count",
+            "type":"number"
+          }
+        }
+      ]
+    }
+
+
+  ],
+  "components": {
+    "tags": {
+      "change" : {
+        "name": "change",
+        "description": "change method"
+      },
+      "view" : {
+        "name": "view",
+        "description": "view method"
+      }
+    },
+    "contentDescriptors": {
+      
+    },
+    "schemas": {
+
+    }
+  }
+}
