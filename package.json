@@ -8,7 +8,7 @@
     "url": "https://github.com/shipsgold/open-rpc-near-client-generator"
   },
   "files": [
-    "templates/"
+    "build"
   ],
   "main": "./build/src/index.js",
   "scripts": {
