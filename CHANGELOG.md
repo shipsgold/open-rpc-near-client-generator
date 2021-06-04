@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.0.2...1.0.3) (2021-06-04)
+
+
+### Bug Fixes
+
+* package organization in .json ([ef8669e](https://github.com/shipsgold/open-rpc-near-client-generator/commit/ef8669ec91b8898c99a478dc4e6e6fe6af572f2f))
+
 ## [1.0.2](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.0.1...1.0.2) (2021-06-04)
 
 
