@@ -2,7 +2,7 @@
   "name": "@shipsgold/open-rpc-near-client-generator",
   "private": false,
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Open RPC Near Client Generator",
   "repository": {
     "type": "git",
     "url": "https://github.com/shipsgold/open-rpc-near-client-generator"
@@ -31,5 +31,8 @@
     "jest": "^27.0.4",
     "ts-jest": "^27.0.2",
     "typescript": "^4.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
