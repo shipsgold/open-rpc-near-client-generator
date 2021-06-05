@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.0.3...1.1.0) (2021-06-05)
+
+
+### Features
+
+* add support for -nostatic client src only ([acabb2b](https://github.com/shipsgold/open-rpc-near-client-generator/commit/acabb2be13e8453aa6dc830023630f29e47292cd))
+
 ## [1.0.3](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.0.2...1.0.3) (2021-06-04)
 
 
