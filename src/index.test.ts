@@ -3,12 +3,13 @@ describe("test code generation", () => {
   it("should generate a client", async () => {
 
     await generator({
-      "outDir": "../generated-client",
+      "outDir": `${__dirname}/../generated-client`,
       "openrpcDocument": `${__dirname}/../test-openrpc.json`, 
       "components" :[ 
         {
+          "openRPCPath": null, 
           "type": "custom",
-          "customType": "client",
+          "customType": "client-nostatic",
           "customComponent": `${__dirname}/../build/src/index.js`, 
           "language": "typescript",
           "name": "test-gen"

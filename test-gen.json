@@ -1,6 +1,6 @@
 {
   "openrpcDocument": "./test-openrpc.json",
-  "outDir": "generated-client",
+  "outDir": "./generated-client",
   "components": [
       {
           "type": "custom",

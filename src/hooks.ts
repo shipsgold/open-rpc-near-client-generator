@@ -1,6 +1,7 @@
 import * as path from "path";
 import { move } from "fs-extra";
 import { components } from "@open-rpc/generator";
+
 import { readFile } from "fs-extra";
 import * as fs from "fs";
 import { promisify } from "util";
@@ -92,6 +93,7 @@ export default <%= className %>;
 const hooks: components.IHooks = {
   afterCopyStatic: [
     async (dest, frm, component): Promise<void> => {
+      if (component.staticPath === undefined || component.staticPath === "") return;
       if (component.language === "typescript") {
         console.log(dest)
         return await move(path.join(dest, "_package.json"), path.join(dest, "package.json"), { overwrite: true });
@@ -100,6 +102,8 @@ const hooks: components.IHooks = {
   ],
   afterCompileTemplate: [
     async (dest, frm, component, openrpcDocument): Promise<void> => {
+
+      if( component.staticPath === undefined || component.staticPath === "") return
       if (component.language === "typescript") {
         const packagePath = path.join(dest, "package.json");
         const fileContents = await readFile(packagePath);
