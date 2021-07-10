@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.1.0...1.1.1) (2021-07-10)
+
+
+### Bug Fixes
+
+* near api is inconsistent between view and change functions ([bce7650](https://github.com/shipsgold/open-rpc-near-client-generator/commit/bce765060dd0243b1a9568ecffd0dc243c5bece1))
+
 # [1.1.0](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.0.3...1.1.0) (2021-06-05)
 
 
