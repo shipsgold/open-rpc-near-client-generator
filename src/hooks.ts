@@ -82,7 +82,9 @@ export class <%= className %> {
       "<%= param.name %>",<% }); %>
     ]
     const paramByName = _.zipObject(paramNames, params);
-    return (this.contract as any).<%=method.name%>({args: paramByName}) as RT<%= methodTypings.getTypingNames("typescript", method).method %> 
+
+    <%if(method.tags === "undefined" || method.tags[0].name === "view"){%>return (this.contract as any).<%=method.name%>(paramByName) as RT<%= methodTypings.getTypingNames("typescript", method).method %> 
+    <%}%><%if (method.tags && method.tags[0].name === "change"){ %>return (this.contract as any).<%=method.name%>({args: paramByName}) as RT<%= methodTypings.getTypingNames("typescript", method).method %> <% } %>
   }
   <% }); %>
 }
