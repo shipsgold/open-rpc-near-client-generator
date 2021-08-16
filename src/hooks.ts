@@ -78,7 +78,7 @@ export class <%= className %> {
     <%if (method.tags && method.tags[0].name !== "change"){ %>const options = {}<% } %>
     const args =  options && Object.keys(options).length ? arrArgs.slice(0, arguments.length-1) : arrArgs
     const paramByName = _.zipObject(paramNames, args);
-    if (options) {
+    if (options && Object.keys(options).length) {
     return (this.contract as any).<%=method.name%>({args: paramByName, ...options}) as RT<%= methodTypings.getTypingNames("typescript", method).method %> 
     }
 
