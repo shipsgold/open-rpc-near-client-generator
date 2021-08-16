@@ -17,7 +17,7 @@
     "gen": "npx --no-install open-rpc-generator generate -c ./test-gen.json"
   },
   "dependencies": {
-    "@open-rpc/generator": "^1.20.0",
+    "@open-rpc/generator": "^1.21.0",
     "fs-extra": "^10.0.0",
     "lodash": "^4.17.21",
     "near-api-js": "^0.41.0"

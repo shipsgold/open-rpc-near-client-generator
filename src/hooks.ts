@@ -63,25 +63,24 @@ export class <%= className %> {
   }
 
   <% openrpcDocument.methods.forEach((method) => { %>
+
   /**
    * <%= method.summary %>
+   * 
    */
   // tslint:disable-next-line:max-line-length
-  public <%= method.name %>(...params: GT<%= methodTypings.getTypingNames("typescript", method).method %>): RT<%= methodTypings.getTypingNames("typescript", method).method %> {
+  public <%= method.name %>(<%= methodTypings.getParamsTyping("typescript", method, ", ")%><%if (method.tags && method.tags[0].name === "change"){ %><%if (method.params.length){ %>, <% } %>options?: ChangeMethodOptions<% } %>): RT<%= methodTypings.getTypingNames("typescript", method).method %> { 
     //return this.request("<%= method.name %>", params);
-    if(isMetaObject(params.slice(1))){
-    let metaData = params.pop() as ChangeMethodOptions;
     const paramNames:string[] = [ <% method.params.forEach((param) => { %> 
       "<%= param.name %>",<% }); %>
     ]
-
-    const paramByName = _.zipObject(paramNames, params);
-    return (this.contract as any).<%=method.name%>({args: paramByName, ...metaData}) as RT<%= methodTypings.getTypingNames("typescript", method).method %> 
+    const arrArgs = Array.from(arguments); 
+    <%if (method.tags && method.tags[0].name !== "change"){ %>const options = {}<% } %>
+    const args =  options && Object.keys(options).length ? arrArgs.slice(0, arguments.length-1) : arrArgs
+    const paramByName = _.zipObject(paramNames, args);
+    if (options) {
+    return (this.contract as any).<%=method.name%>({args: paramByName, ...options}) as RT<%= methodTypings.getTypingNames("typescript", method).method %> 
     }
-    const paramNames:string[] = [ <% method.params.forEach((param) => { %> 
-      "<%= param.name %>",<% }); %>
-    ]
-    const paramByName = _.zipObject(paramNames, params);
 
     <%if(method.tags === "undefined" || method.tags[0].name === "view"){%>return (this.contract as any).<%=method.name%>(paramByName) as RT<%= methodTypings.getTypingNames("typescript", method).method %> 
     <%}%><%if (method.tags && method.tags[0].name === "change"){ %>return (this.contract as any).<%=method.name%>({args: paramByName}) as RT<%= methodTypings.getTypingNames("typescript", method).method %> <% } %>
