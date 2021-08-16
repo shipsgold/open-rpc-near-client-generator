@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.2.0...1.2.1) (2021-08-16)
+
+
+### Bug Fixes
+
+* correct view logic toggle to filter out empty options object ([f1c224e](https://github.com/shipsgold/open-rpc-near-client-generator/commit/f1c224ebc0351c146743d456cb3a5d39035e91c0))
+
 # [1.2.0](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.1.1...1.2.0) (2021-08-16)
 
 
