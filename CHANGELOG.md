@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.1.1...1.2.0) (2021-08-16)
+
+
+### Features
+
+* adds proper naming for parameters for auto type ([c57691f](https://github.com/shipsgold/open-rpc-near-client-generator/commit/c57691f8b78b8a4accbfd418a8db2c56955de3a8))
+
 ## [1.1.1](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.1.0...1.1.1) (2021-07-10)
 
 
