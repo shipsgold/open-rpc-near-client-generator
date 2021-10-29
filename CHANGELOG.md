@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.2.1...1.2.2) (2021-10-29)
+
+
+### Bug Fixes
+
+* add test for the new flexible tags order ([ac7fa3a](https://github.com/shipsgold/open-rpc-near-client-generator/commit/ac7fa3a689b4ab1ed80f68013c92b8d730639b25))
+* hard coded tag order limitation ([fe62dbf](https://github.com/shipsgold/open-rpc-near-client-generator/commit/fe62dbf2a8ffbaebbfd9e926367e38b74e194b8a))
+
 ## [1.2.1](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.2.0...1.2.1) (2021-08-16)
 
 
