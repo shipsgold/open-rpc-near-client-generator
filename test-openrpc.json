@@ -22,7 +22,11 @@
     {
       "name": "get_count",
       "params": [],
-      "tags": [ {
+      "tags": [ 
+        {
+          "$ref": "#/components/tags/dummy"
+        },
+        {
           "$ref": "#/components/tags/view"
         }],
         "result": {
@@ -76,6 +80,10 @@
       "view" : {
         "name": "view",
         "description": "view method"
+      },
+      "dummy" : {
+        "name": "dummy",
+        "description": "dummy method"
       }
     },
     "contentDescriptors": {
