@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.2.2...1.3.0) (2021-12-27)
+
+
+### Features
+
+* version bump type changes from near-api ([e0b622d](https://github.com/shipsgold/open-rpc-near-client-generator/commit/e0b622d3811c64f5610942ce49eb16f44ad8b155))
+
 ## [1.2.2](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.2.1...1.2.2) (2021-10-29)
 
 
