@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.3.0...1.3.1) (2021-12-27)
+
+
+### Bug Fixes
+
+* missing generated client version bump and lock ([03b2f88](https://github.com/shipsgold/open-rpc-near-client-generator/commit/03b2f88016274c2ef38a40b68e3b1e2717e60b30))
+
 # [1.3.0](https://github.com/shipsgold/open-rpc-near-client-generator/compare/1.2.2...1.3.0) (2021-12-27)
 
 
