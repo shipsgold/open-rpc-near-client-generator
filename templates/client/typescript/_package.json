@@ -15,7 +15,7 @@
   "dependencies": {
     "@open-rpc/client-js": "1.7.0",
     "@open-rpc/meta-schema": "1.14.2",
-    "near-api-js": "^0.41.0",
+    "near-api-js": "0.44.0",
     "bn.js": "^5.2.0",
     "@open-rpc/schema-utils-js": "1.15.0",
     "@types/json-schema": "7.0.3",
