@@ -52,7 +52,7 @@ echo '{
           "type": "custom",
           "name": "test-contract-client",
           "language": "typescript",
-          "customComponent": "../../../../build/src/index.js",
+          "customComponent": "@shipsgold/open-rpc-near-client-generator",
           "customType": "client"
       } 
   ]
